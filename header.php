@@ -88,8 +88,7 @@ body {
     </button>
     <div class="dropdown-content">
       <a href="tampil_guru.php">Data Guru</a>
-      <a href="#">Data Siswa</a>
-      <a href="#">Data Kelas</a>
+      <a href="tampil_siswa.php">Data Siswa</a>
     </div>
   	</div> 
     <a href="transaksi.php">transaksi</a>
