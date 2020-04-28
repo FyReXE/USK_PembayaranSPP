@@ -2,26 +2,27 @@
 <html>
 <head>
 	<title>Login SPPKU</title>
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
 <body>
 <h3>Silahkan Login</h3>
 <hr/>
-<form method="post" action="">
-	<table>
-		<tr>
-			<td>Username</td>
-			<td><input type="text" name="username" /></td>
-		</tr>
-		<tr>
-			<td>Password</td>
-			<td><input type="password" name="password" /></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><input type="submit" value="Login" /></td>
-		</tr>
-	</table>
+<form action="" method="post">
+  <div class="imgcontainer">
+    <img src="./assets/img/ava1.png" alt="Avatar" class="avatar">
+  </div>
+
+ <center><div class="container">
+    <label for="uname"><b>Username</b></label>
+ <input type="text" name="username" /><br>
+
+    <label for="psw"><b>Password</b></label>
+   <input type="password" name="password" /></center>
+
+   <center><button type="submit">Login</button></center>
+  </div>
 </form>
+
 <?php
 if($_SERVER['REQUEST_METHOD']=='POST'){
 	$user = $_POST['username'];
