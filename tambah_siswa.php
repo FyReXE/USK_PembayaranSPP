@@ -46,11 +46,9 @@
 	</table>
 </form>
 
-<!-- simpan data -->
 <?php
 	if($_SERVER['REQUEST_METHOD']=='POST'){
 		
-		//variabel untuk menampung inputan dari form
 		$nis 	= $_POST['nis'];
 		$nama 	= $_POST['namasiswa'];
 		$kelas 	= $_POST['kelas'];
@@ -58,7 +56,6 @@
 		$biaya 	= $_POST['biaya'];
 		$awaltempo = $_POST['jatuhtempo'];
 
-		// Membuat Array untuk menampung bulan bahasa indonesia
 		$bulanIndo = array(
 			'01' => 'Januari',
 			'02' => 'Februari',
@@ -75,7 +72,7 @@
 		);
 
 
-		//proses simpan
+
 		if($nis=='' || $nama=='' || $kelas==''){
 			echo "Form belum lengkap...";
 		}else{
@@ -84,13 +81,13 @@
 			if(!$simpan){
 				echo "Penyimpanan data gagal..";
 			}else{
-				//ambil data id siswa terakhir
+			
 				$ds=mysqli_fetch_array(mysqli_query($konek, "SELECT idsiswa FROM siswa ORDER BY idsiswa DESC LIMIT 1"));
 				$idsiswa = $ds['idsiswa'];
 
-				//membuat tagihan (12 bulan dimulai dari Juli 2017 dan menyimpan tagihan di tabel spp
+			
 				for($i=0; $i<12; $i++){
-					//membuat tanggal jatuh tempo nya setiap tanggal 10
+					
 					$jatuhtempo = date("Y-m-d", strtotime("+$i month", strtotime($awaltempo)));
 
 					$bulan = $bulanIndo[date('m', strtotime($jatuhtempo))]." ".date('Y',strtotime($jatuhtempo));

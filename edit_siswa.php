@@ -58,11 +58,9 @@ $e=mysqli_fetch_array($sqlEdit);
 	</table>
 </form>
 
-<!-- proses edit data -->
 <?php
 if($_SERVER['REQUEST_METHOD']=='POST'){
 
-	//variabel untuk menampung inputan dari form
 	$id 	= $_POST['idsiswa'];
 	$nis 	= $_POST['nis'];
 	$nama 	= $_POST['namasiswa'];
