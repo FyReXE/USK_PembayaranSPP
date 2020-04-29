@@ -11,4 +11,4 @@
 </style>
 
 <div class="footer">
-  <p>copyrigh &copy; SPPKU_MUHI</p>
+  <p>copyright&copy; SPPKU_MUHI</p>

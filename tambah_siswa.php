@@ -29,7 +29,7 @@
 		</tr>
 		<tr>
 			<td>Tahun Ajaran</td>
-			<td><input type="text" name="tahunajaran" value="2017/2018" readonly /></td>
+			<td><input type="text" name="tahunajaran" value="2019/2020" readonly /></td>
 		</tr>
 		<tr>
 			<td>Biaya SPP</td>
@@ -37,7 +37,7 @@
 		</tr>
 		<tr>
 			<td>Jatuh Tempo Pertama</td>
-			<td><input type="text" name="jatuhtempo" value="2017-07-10" readonly /></td>
+			<td><input type="text" name="jatuhtempo" value="2019-10-01" readonly /></td>
 		</tr>
 		<tr>
 			<td></td>

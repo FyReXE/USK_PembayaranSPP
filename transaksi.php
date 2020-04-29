@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 <style type="text/css">
 	* {box-sizing: border-box;}
 
@@ -78,12 +79,10 @@ body {
 <?php include "header.php" ?>
 
 <h3>Transaksi Pembayaran SPP</h3>
-	  <div class="search-container">
-  		<form method="get" action="">
-      <input type="text" placeholder="cari" name="search">
-      <button type="submit"></button>
-    </form>
-  </div>
+	<form method="get" action="">
+	NIS: <input type="text" name="nis" />
+	<input type="submit" name="cari" value="Cari Siswa" />
+</form>
 
 <?php
 if(isset($_GET['nis']) && $_GET['nis']!=''){

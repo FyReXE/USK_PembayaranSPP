@@ -8,6 +8,8 @@ if (isset($_SESSION['login'])) {
 <html>
 <head>
 	<title>cetak</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style type="text/css">
 		body{
 			font-family: Arial;
@@ -66,7 +68,7 @@ if (isset($_SESSION['login'])) {
 		</td>
 	</tr>
 </table>
-<a href="#" class="no-print" onclick="window.print();">cetak</a>
+<a href="#" class="no-print" onclick="window.print();"><button class="w3-button w3-black">cetak</a></button>
 </body>
 </html>
 
