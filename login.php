@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
 <body>
-<h3>Silahkan Login</h3>
+<h3 align="center">Silahkan Login</h3>
 <hr/>
 <form action="" method="post">
   <div class="imgcontainer">

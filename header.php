@@ -10,8 +10,8 @@ include "koneksi.php";
 <html>
 <head>
 	<title>SPPKU</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -79,9 +79,8 @@ body {
 </style>
 </head>
 <body>
-<p align="center"><h2>Selamat datang di aplikasi pembayaran SPPKU</h2>
-</p><hr/>
  <div class="navbar">
+   <a href="index.php"><img src="./assets/img/logo2.png" width="40" height="40"></a><br>
   <div class="dropdown">
     <button class="dropbtn">Data
       <i class="fa fa-caret-down"></i>
@@ -94,5 +93,6 @@ body {
     <a href="transaksi.php">transaksi</a>
   	<a href="laporan.php">laporan</a>
   	<a href="logout.php">Logout</a>
+
 </div>
 <hr/>
